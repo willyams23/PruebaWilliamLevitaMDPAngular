@@ -1,0 +1,142 @@
+<div *ngIf="visualizaLista">
+  <app-cliente></app-cliente>
+</div>
+
+<div *ngIf="!visualizaLista">
+<h1 class="h3 mb-2 text-gray-800"><i class="fas fa-user-friends"></i> {{titulo}}</h1>
+<p></p>
+
+<div class="card shadow">
+  <div class="card-header">
+    <h6 class="font-weight-bold text-primary">{{subtitulo}}</h6>
+  </div>
+  <form [formGroup]="formCliente">
+    <div class="card-body">
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label class="control-label font-weight-bold">Nombre</label>
+          <input formControlName="nombre" type="text" class="form-control" id="nombre" placeholder="Ingrese nombre"  >
+          <div *ngIf="(isError)" class="message-alert">
+            * Ingrese nombre del cliente
+          </div>
+
+        </div>
+        <div class="form-group col-md-5">
+          <label class="control-label font-weight-bold">Apellidos</label>
+          <input formControlName="apellido" type="text" class="form-control" id="apellido" placeholder="Ingrese apellidos">
+          <div *ngIf="(isError)" class="message-alert">
+            * Ingrese apellido del cliente
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-row">
+          <div class="form-group col-md-5">
+            <label class="control-label font-weight-bold">Correo electrónico </label>
+            <input formControlName="correo" type="text" class="form-control" id="txtCorreo" placeholder="Ingrese Correo">
+            <div *ngIf="(isError)" class="message-alert">
+              * Ingrese correo del cliente
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label class="control-label font-weight-bold">Fecha Nacimiento</label>
+            <div class="input-group">
+              <input type="text"
+                  placeholder="dd/mm/yyyy"
+                  class="form-control"
+                  #dp1="bsDatepicker"
+                  bsDatepicker [bsConfig]="datePickerConfig"
+                  formControlName="fechaNacimiento"
+                  >
+              <div class="input-group-append">
+                <button class="btn btn-danger" type="button"
+                  (click)="dp1.toggle()" [attr.aria-expanded]="dp1.isOpen">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label class="control-label font-weight-bold">Dirección  </label>
+          <input formControlName="direccion" type="text" class="form-control" id="txtDireccion" placeholder="Ingrese Direccion">
+        </div>
+        <div class="form-group col-md-4">
+          <label class="control-label font-weight-bold">Fecha Registro</label>
+          <div class="input-group">
+            <input type="text"
+                placeholder="dd/mm/yyyy"
+                class="form-control"
+                formControlName="fechaRegistro" readonly
+                bsDatepicker [bsConfig]="datePickerConfig"
+                >
+            <div class="input-group-append">
+              <button class="btn btn-danger" type="button">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+              </button>
+              <!--
+                [attr.aria-expanded]="dp2.isOpen"
+                #dp2="bsDatepicker"
+                (click)="dp2.toggle()" -->
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label class="control-label font-weight-bold" for="inputProv">Activo</label>
+        <select class="form-control" formControlName="activo">
+          <option [ngValue]="null" selected >--SELECCIONE--</option>
+          <option [value]="true">SI</option>
+          <option [value]="false">NO</option>
+        </select>
+      </div>
+    </div>
+
+
+    <br>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <button (click)="ngVisualizarLista()" class="btn btn-success shadow-sm">
+            <i class="fa fa-reply" aria-hidden="true"></i><span class="sp_espacio"></span>Regresar
+          </button>
+          <span class="sp_espacio"></span>
+          <button (click)="ngLimpiar()" class="btn btn-warning shadow-sm">
+            <i class="fa fa-trash" aria-hidden="true"></i><span class="sp_espacio"></span>Limpiar
+          </button>
+          <span class="sp_espacio"></span>
+          <button (click)="ngGrabarCliente(template)" class="btn btn-primary shadow-sm">
+            <i class="fas fa-save" aria-hidden="true"></i> Grabar
+          </button>
+        </div>
+      </div>
+
+      <alert type="md-color col-md-6" *ngIf="isErrorAlert" >
+        <strong>Ingrese los campos Requeridos </strong>
+        <span [innerHTML]="messageError"></span>
+      </alert>
+
+
+      <ng-template #template>
+        <div class="modal-body text-center">
+          <p>El correo electrónico es unico. Por favor ingrese otro email.</p>
+          <button type="button" class="btn btn-primary" (click)="Cancel()">
+            OK
+          </button>
+
+        </div>
+      </ng-template>
+
+
+    </div>
+  </form>
+</div>
+</div>
+
+

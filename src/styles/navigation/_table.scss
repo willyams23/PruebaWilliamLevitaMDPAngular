@@ -1,0 +1,44 @@
+.btn-info {
+    cursor: pointer;
+}
+
+.btn-danger {
+    cursor: pointer;
+}
+
+.btn-search {
+    cursor: pointer;
+}
+
+.invisile {
+    display: none;
+}
+.sp_espacio {
+    padding-left: 5px;
+}
+
+/*
+tooltip
+*/
+.tooltip-inner {
+    background-color: #444444;
+    color: #fff;
+}
+
+.tooltip.top .tooltip-arrow:before,
+.tooltip.top .tooltip-arrow {
+    border-top-color: #444444;
+}
+
+.alert-md-color {
+    background-color: #e74a3b;
+    border-color: #e74a3b;
+    color: #fff;
+    font-size: 12px;
+}
+
+.message-alert {
+    color: #e74a3b!important;
+    font-size: 11px;
+    font-weight: bold;
+}

@@ -1,0 +1,257 @@
+[
+  {
+      "IdUbigeo": 0,
+      "CodigoUbigeo": "0",
+      "Distrito": "--SELECCIONE--"
+  },
+  {
+      "IdUbigeo": 1501,
+      "CodigoUbigeo": "150101",
+      "Distrito": "Lima"
+  },
+  {
+      "IdUbigeo": 1502,
+      "CodigoUbigeo": "150102",
+      "Distrito": "Ancón"
+  },
+  {
+      "IdUbigeo": 1503,
+      "CodigoUbigeo": "150103",
+      "Distrito": "Ate"
+  },
+  {
+      "IdUbigeo": 1504,
+      "CodigoUbigeo": "150104",
+      "Distrito": "Barranco"
+  },
+  {
+      "IdUbigeo": 1505,
+      "CodigoUbigeo": "150105",
+      "Distrito": "Breña"
+  },
+  {
+      "IdUbigeo": 1506,
+      "CodigoUbigeo": "150106",
+      "Distrito": "Carabayllo"
+  },
+  {
+      "IdUbigeo": 1507,
+      "CodigoUbigeo": "150107",
+      "Distrito": "Chaclacayo"
+  },
+  {
+      "IdUbigeo": 1508,
+      "CodigoUbigeo": "150108",
+      "Distrito": "Chorrillos"
+  },
+  {
+      "IdUbigeo": 1509,
+      "CodigoUbigeo": "150109",
+      "Distrito": "Cieneguilla"
+  },
+  {
+      "IdUbigeo": 1510,
+      "CodigoUbigeo": "150110",
+      "Distrito": "Comas"
+  },
+  {
+      "IdUbigeo": 1511,
+      "CodigoUbigeo": "150111",
+      "Distrito": "El Agustino"
+  },
+  {
+      "IdUbigeo": 1512,
+      "CodigoUbigeo": "150112",
+      "Distrito": "Independencia"
+  },
+  {
+      "IdUbigeo": 1513,
+      "CodigoUbigeo": "150113",
+      "Distrito": "Jesús María"
+  },
+  {
+      "IdUbigeo": 1514,
+      "CodigoUbigeo": "150114",
+      "Distrito": "La Molina"
+  },
+  {
+      "IdUbigeo": 1515,
+      "CodigoUbigeo": "150115",
+      "Distrito": "La Victoria"
+  },
+  {
+      "IdUbigeo": 1516,
+      "CodigoUbigeo": "150116",
+      "Distrito": "Lince"
+  },
+  {
+      "IdUbigeo": 1517,
+      "CodigoUbigeo": "150117",
+      "Distrito": "Los Olivos"
+  },
+  {
+      "IdUbigeo": 1518,
+      "CodigoUbigeo": "150118",
+      "Distrito": "Lurigancho"
+  },
+  {
+      "IdUbigeo": 1519,
+      "CodigoUbigeo": "150119",
+      "Distrito": "Lurin"
+  },
+  {
+      "IdUbigeo": 1520,
+      "CodigoUbigeo": "150120",
+      "Distrito": "Magdalena del Mar"
+  },
+  {
+      "IdUbigeo": 1521,
+      "CodigoUbigeo": "150121",
+      "Distrito": "Pueblo Libre"
+  },
+  {
+      "IdUbigeo": 1522,
+      "CodigoUbigeo": "150122",
+      "Distrito": "Miraflores"
+  },
+  {
+      "IdUbigeo": 1523,
+      "CodigoUbigeo": "150123",
+      "Distrito": "Pachacamac"
+  },
+  {
+      "IdUbigeo": 1524,
+      "CodigoUbigeo": "150124",
+      "Distrito": "Pucusana"
+  },
+  {
+      "IdUbigeo": 1525,
+      "CodigoUbigeo": "150125",
+      "Distrito": "Puente Piedra"
+  },
+  {
+      "IdUbigeo": 1526,
+      "CodigoUbigeo": "150126",
+      "Distrito": "Punta Hermosa"
+  },
+  {
+      "IdUbigeo": 1527,
+      "CodigoUbigeo": "150127",
+      "Distrito": "Punta Negra"
+  },
+  {
+      "IdUbigeo": 1528,
+      "CodigoUbigeo": "150128",
+      "Distrito": "Rímac"
+  },
+  {
+      "IdUbigeo": 1529,
+      "CodigoUbigeo": "150129",
+      "Distrito": "San Bartolo"
+  },
+  {
+      "IdUbigeo": 1530,
+      "CodigoUbigeo": "150130",
+      "Distrito": "San Borja"
+  },
+  {
+      "IdUbigeo": 1531,
+      "CodigoUbigeo": "150131",
+      "Distrito": "San Isidro"
+  },
+  {
+      "IdUbigeo": 1532,
+      "CodigoUbigeo": "150132",
+      "Distrito": "San Juan de Lurigancho"
+  },
+  {
+      "IdUbigeo": 1533,
+      "CodigoUbigeo": "150133",
+      "Distrito": "San Juan de Miraflores"
+  },
+  {
+      "IdUbigeo": 1534,
+      "CodigoUbigeo": "150134",
+      "Distrito": "San Luis"
+  },
+  {
+      "IdUbigeo": 1535,
+      "CodigoUbigeo": "150135",
+      "Distrito": "San Martín de Porres"
+  },
+  {
+      "IdUbigeo": 1536,
+      "CodigoUbigeo": "150136",
+      "Distrito": "San Miguel"
+  },
+  {
+      "IdUbigeo": 1537,
+      "CodigoUbigeo": "150137",
+      "Distrito": "Santa Anita"
+  },
+  {
+      "IdUbigeo": 1538,
+      "CodigoUbigeo": "150138",
+      "Distrito": "Santa María del Mar"
+  },
+  {
+      "IdUbigeo": 1539,
+      "CodigoUbigeo": "150139",
+      "Distrito": "Santa Rosa"
+  },
+  {
+      "IdUbigeo": 1540,
+      "CodigoUbigeo": "150140",
+      "Distrito": "Santiago de Surco"
+  },
+  {
+      "IdUbigeo": 1541,
+      "CodigoUbigeo": "150141",
+      "Distrito": "Surquillo"
+  },
+  {
+      "IdUbigeo": 1542,
+      "CodigoUbigeo": "150142",
+      "Distrito": "Villa El Salvador"
+  },
+  {
+      "IdUbigeo": 1543,
+      "CodigoUbigeo": "150143",
+      "Distrito": "Villa María del Triunfo"
+  },
+  {
+    "IdUbigeo": 910,
+    "CodigoUbigeo": "070101",
+    "Distrito": "Callao"
+  },
+  {
+      "IdUbigeo": 911,
+      "CodigoUbigeo": "070102",
+      "Distrito": "Bellavista"
+  },
+  {
+      "IdUbigeo": 912,
+      "CodigoUbigeo": "070103",
+      "Distrito": "Carmen de la Legua Reynoso"
+  },
+  {
+      "IdUbigeo": 913,
+      "CodigoUbigeo": "070104",
+      "Distrito": "La Perla"
+  },
+  {
+      "IdUbigeo": 914,
+      "CodigoUbigeo": "070105",
+      "Distrito": "La Punta"
+  },
+  {
+      "IdUbigeo": 915,
+      "CodigoUbigeo": "070106",
+      "Distrito": "Ventanilla"
+  },
+  {
+      "IdUbigeo": 916,
+      "CodigoUbigeo": "070107",
+      "Distrito": "Mi Perú"
+  }
+]

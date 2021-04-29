@@ -1,0 +1,38 @@
+.dropdown-menu {
+  border: 1px solid #B9B9B9;
+  border-radius: .25rem;
+}
+
+.dropdown-item {
+  padding: 0.05rem 0.8rem;
+  color: #3A3B45;
+}
+
+span.text {
+  font-size: 16px;
+}
+
+.btn-dropdown {
+  background-color: #F8F9FC;
+  /* color: #3A3B45; */
+}
+
+.btn-dropdown:hover {
+  background-color: #DDE2F1;
+  color: #3A3B45;
+}
+
+.btn-dropdown:focus {
+  background-color: #DDE2F1;
+  color: #3A3B45;
+}
+
+.btn-dropdown.active, .btn-dropdown:active {
+  background-color: #DDE2F1;
+  color: #3A3B45;
+}
+
+.btn:focus, .btn.focus, .btn-dropdown:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}

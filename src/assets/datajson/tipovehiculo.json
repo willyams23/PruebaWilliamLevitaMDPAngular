@@ -1,0 +1,23 @@
+[
+		{
+			"IdVehiculo": 0,
+			"Vehiculo": "SELECCIONE UN VEHICULO"
+		},
+		{
+			"IdVehiculo": 1,
+			"Vehiculo": "Bus"
+		},
+		{
+			"IdVehiculo": 2,
+			"Vehiculo": "Hyundai VAN H1"
+		},
+		{
+			"IdVehiculo": 3,
+			"Vehiculo": "Toyota Corola"
+		},
+		{
+			"IdVehiculo": 4,
+			"Vehiculo": "Sprinter Renault"
+		}
+]
+

@@ -1,0 +1,117 @@
+<div *ngIf="visualizaLista">
+  <h1 class="h3 mb-2 text-gray-800">
+    <i class="fas fa-user-friends"></i> Mantenimiento de Clientes
+  </h1>
+  <p></p>
+  <div class="card shadow">
+    <div class="card-header">
+      <h6 class="font-weight-bold text-primary">Lista de Clientes</h6>
+    </div>
+    <div class="card-body">
+      <div>
+        <div class="dataTables_wrapper dt-bootstrap4">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <input
+                        (input)="ngFiltrarLista()"
+                        type="text"
+                        class="form-control"
+                        [(ngModel)]="textoFiltra"
+                        placeholder="Ingrese el nombre del cliente"
+                      />
+                      <label
+                        (click)="ngSearch()"
+                        [ngClass]="
+                          textoFiltra.length > 0
+                            ? 'btn bg-transparent btn-search'
+                            : 'btn bg-transparent btn-search invisile'
+                        "
+                        style="margin-left: -40px; z-index: 100"
+                        tooltip="Limpiar"
+                      >
+                        <i class="fa fa-times"></i>
+                      </label>
+                      <div class="input-group-append">
+                        <label class="btn btn-primary">
+                          <i class="fas fa-search fa-sm"></i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive" style="max-height: 500px">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr class="">
+                      <th style="width: 18%">Nombre</th>
+                      <th style="width: 18%">Apellidos</th>
+                      <th style="width: 15%">Correo</th>
+                      <th style="width: 14%" class="text-center">Fecha Nacimiento</th>
+                      <th style="width: 20%">Direccion</th>
+                      <th style="width: 5%">Activo</th>
+                      <th style="width: 10%" class="text-center">Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let item of listaClienteTemporal">
+                      <td>{{ item.nombre }}</td>
+                      <td>{{ item.apellido }}</td>
+                      <td>{{ item.correo }}</td>
+                      <td class="text-center">
+                        {{ item.fechaNacimiento | date: "dd/MM/yyyy" }}
+                      </td>
+                      <td>{{ item.direccion }}</td>
+                      <td>{{ item.activo }}</td>
+                      <td class="text-center">
+                        <label
+                          (click)="ngVerDetalle(item)"
+                          class="btn-circle btn-sm btn-info"
+                          tooltip="Editar"
+                        >
+                          <span class="glyphicon glyphicon-edit"></span>
+                        </label>
+                        <span class="sp_espacio"></span>
+                        <label
+                          (click)="ngEliminar(item, template)"
+                          class="btn-circle btn-sm btn-danger"
+                          tooltip="Eliminar"
+                        >
+                          <span class="glyphicon glyphicon-remove"></span>
+                        </label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button (click)="ngCrearCliente()" class="btn btn-sm btn-primary">
+        <i class="fas fa-user-friends"></i> Nuevo Cliente
+      </button>
+
+      <ng-template #template>
+        <div class="modal-body text-center">
+          <p>¿Está seguro de Eliminar el Registro?</p>
+          <button type="button" class="btn btn-primary" (click)="Confirmar()">
+            SI
+          </button>
+          <span class="sp_espacio"></span>
+          <button type="button" class="btn btn-success" (click)="Cancel()">
+            No
+          </button>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!visualizaLista">
+  <app-detalle-cliente [_cliente]="_objCliente" [titulo]="titulo" [subtitulo]="subtitulo"></app-detalle-cliente>
+</div>
